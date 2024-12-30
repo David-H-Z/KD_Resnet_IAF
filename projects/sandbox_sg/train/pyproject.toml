@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "train"
+version = "0.1.0"
+description = "Generate training data and launch trainer"
+authors = ["ethan.marx <ethan.marx@ligo.org>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+torch = "^1.13"
+"mlpe.data" = {path = "../../../libs/data", develop  = true}
+"mlpe.logging" = {path = "../../../libs/logging", develop = true}
+"mlpe.architectures" = {path = "../../../libs/architectures", develop = true}
+"sampling" = {path = "../sampling", develop = true}
+
+"ml4gw" = {path = "../../../ml4gw", develop = true}
+typeo = {path = "../../../typeo", develop = true}
+
+
+[tool.poetry.scripts]
+train = "train.train:main"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

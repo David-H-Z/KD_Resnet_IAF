@@ -1,0 +1,16 @@
+model:
+  name: ResNet
+  framework: pytorch
+  outputs: []
+  inputs: []
+device: cpu
+evaluation:
+  accuracy:
+    metric:
+      topk: 1
+    iteration: -1
+    multi_metrics: null
+    dataloader: null
+  diagnosis: false
+  performance:
+    dataloader: null

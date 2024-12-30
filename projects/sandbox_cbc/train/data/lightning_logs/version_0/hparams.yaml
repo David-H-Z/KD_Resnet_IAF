@@ -1,0 +1,14 @@
+approximant: !!python/name:ml4gw.waveforms.phenom_d.IMRPhenomD ''
+background_path: /root/data/background.h5
+batch_size: 500
+batches_per_epoch: 200
+f_max: 200
+f_min: 20
+f_ref: 40
+ifos:
+- H1
+- L1
+prior_func: !!python/name:mlpe.injection.priors.nonspin_bbh_chirp_mass_q_parameter_sampler ''
+sampling_frequency: 2048
+time_duration: 4
+valid_frac: 0.2

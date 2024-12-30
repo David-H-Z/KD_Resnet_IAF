@@ -1,0 +1,10 @@
+{
+    "python.analysis.extraPaths": [
+        "./ml4gw",
+        "./libs/architectures",
+        "./libs/injection",
+        "./libs/logging",
+        "./projects/sandbox_sg/analyze_with_bilby/analyze_with_",
+        "./libs/data"
+    ]
+}
